@@ -7,20 +7,20 @@ print (huespedes.items()) #Se imprime el par clave-valor en paréntesis
 
 print (huespedes.keys()) #Se imprimen solo las claves que identifican cada valor o elemento
 for key in huespedes:
-    print (key) #Se imprimen las claves  de forma individual
+    print (key) #Se imprimen las claves  de forma individual mediante un ciclo for
 
 print (huespedes.values()) #Se imprimen solo los valores del diccionario
 for key in huespedes:
-    print (huespedes[key]) #Se imprime cada valor del diccionario
+    print (huespedes[key]) #Se imprime cada valor del diccionario mediante un ciclo for
 print()
 
 for habitacion in huespedes:
-    print (habitacion,':',huespedes[habitacion]) #Se imprime la clave (habitación) con dos puntos para indicar el valor(huesped) que hay en cada una
+    print (habitacion,':',huespedes[habitacion]) #Se imprime la clave (habitación) con dos puntos para indicar el valor(huesped) que hay en cada una mediante un ciclo for
 print()
 for habitacion,huesped in huespedes.items():
-    print (habitacion,':',huespedes[key]) #Se imprime la clave(habitación) y el valor correspondiente a la llave
+    print (habitacion,':',huespedes[key]) #Se imprime la clave(habitación) y el valor correspondiente a la llave mediante un ciclo for
 for indice, key in enumerate(huespedes):
-    print (indice+1,key,huespedes[key]) #Se imprime el índice de cada elemento(par clave-valor) del arreglo sumando a este 1. Además se imprime la clave y el elemento
+    print (indice+1,key,huespedes[key]) #Se imprime el índice de cada elemento(par clave-valor) del arreglo sumando a este 1. Además se imprime la clave y el elemento mediante un ciclo for
 print()
 
 print (huespedes[105]) #Se imprime el valor con la clave 105
@@ -33,13 +33,13 @@ huespedes[107]='Don Omar' #Se añade un nuevo elemento con clave: 107 y valor: D
 huespedes.setdefault('109','Luis Miguel') #Se crea el elemento con clave: 109 y valor: Luis Miguel
 
 for huesped in huespedes.items():
-    print (habitacion,':',huesped) #Se imprimen todos los elementos( iniciales y nuevos) del diccionario
+    print (habitacion,':',huesped) #Se imprimen todos los elementos( iniciales y nuevos) del diccionario mediante un ciclo for
 print()
 
 registroshoy={201:'Vicente Fernandez',301:'Pepe Guardiola'} #Se definen dos nuevos elementos (clave-valor)
 huespedes.update(registroshoy)#Se agregan los nuevos elementos al diccionario "huespedes"
 for habitacion, huesped in huespedes.items():
-    print (habitacion,':',huesped) # Se imprime el diccionario con los elementos actualizados
+    print (habitacion,':',huesped) # Se imprime el diccionario con los elementos actualizados mediante un ciclo for
 print()
 
 print ('====================================') #Se imprime un separador
